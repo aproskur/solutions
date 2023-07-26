@@ -1,0 +1,38 @@
+:root {
+    --fs: 12px;
+}
+
+#swatch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    row-gap: 1em;
+}
+
+.swatch-wrapper {
+    max-width: 200px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: box-shadow 0.1s linear;
+}
+
+.swatch-wrapper:hover,
+.swatch-wrapper:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.color-wrapper {
+    height: 120px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.metadata-wrapper {
+    background-color: #ededed;
+    font-size: var(--fs);
+    font-weight: bold;
+    border-radius: 0px 0px 4px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
